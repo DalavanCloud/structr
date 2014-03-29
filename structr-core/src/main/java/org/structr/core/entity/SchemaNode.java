@@ -176,7 +176,7 @@ public class SchemaNode extends AbstractSchemaNode implements Schema {
 	@Override
 	public boolean isValid(final ErrorBuffer errorBuffer) {
 
-		return ValidationHelper.checkStringMatchesRegex(this, name, "[a-zA-Z_]+", errorBuffer);
+		return ValidationHelper.checkStringMatchesRegex(this, name, "[a-zA-Z_][0-9a-zA-Z_]*", errorBuffer);
 
 	}
 
